@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CalculatorOfTheMedium</string>
+    <string name="texView_Intro">Introduce num:</string>
+    <string name="button_Calculate">Calculate</string>
+    <string name="button_AddNum">Add num</string>
+    <string name="button_Reset">Reset</string>
+    <string name="textView_Medium">Medium</string>
+    <string name="button_showList">Show list</string>
+</resources>

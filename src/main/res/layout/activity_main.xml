@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewList"
+        android:layout_width="277dp"
+        android:layout_height="241dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="@+id/TextViewMedium"
+        app:layout_constraintTop_toBottomOf="@+id/TextViewMedium" />
+
+    <Button
+        android:id="@+id/buttonShowList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="68dp"
+        android:text="@string/button_showList"
+        android:onClick="showList"
+        app:layout_constraintStart_toEndOf="@+id/TextViewMedium"
+        app:layout_constraintTop_toBottomOf="@+id/buttonReset" />
+
+    <TextView
+        android:id="@+id/TextViewIntro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/texView_Intro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.12" />
+
+    <EditText
+        android:id="@+id/EditTextNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintStart_toStartOf="@+id/TextViewIntro"
+        app:layout_constraintTop_toBottomOf="@+id/TextViewIntro" />
+
+    <Button
+        android:id="@+id/ButtonCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:onClick="sendMessage"
+        android:text="@string/button_Calculate"
+        app:layout_constraintStart_toStartOf="@+id/EditTextNum"
+        app:layout_constraintTop_toBottomOf="@+id/EditTextNum" />
+
+    <TextView
+        android:id="@+id/TextViewMedium"
+        android:layout_width="88dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="72dp"
+        android:text="@string/textView_Medium"
+        app:layout_constraintStart_toStartOf="@+id/ButtonCalculate"
+        app:layout_constraintTop_toBottomOf="@+id/ButtonCalculate" />
+
+    <Button
+        android:id="@+id/buttonReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="76dp"
+        android:onClick="resetList"
+        android:text="@string/button_Reset"
+        app:layout_constraintStart_toEndOf="@+id/ButtonCalculate"
+        app:layout_constraintTop_toBottomOf="@+id/EditTextNum" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
